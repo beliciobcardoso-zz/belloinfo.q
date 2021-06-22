@@ -21,7 +21,8 @@ main {
 }
 
 main .container {
-    width: min(36.3rem 100%);
+    margin-top: -4rem;
+    width: min(36.3rem, 100%);
 }
 
 main h2 {
@@ -41,4 +42,51 @@ button,
 .button {
     width: 100%;
     margin-bottom: 1.8rem;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+.separator div:nth-child(2) {
+    color: var(--grey-blue);
+    padding: 1.35rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 0;
+}
+
+.separator div:nth-child(1),
+.separator div:nth-child(3) {
+    background: var(--grey-blue);
+    height: .1rem;
+    width: 100%;
+}
+
+#bg {
+    position: relative;
+    background-position-x: -7rem;
+}
+
+.ball {
+    opacity: 0.1;
+    background: var(--blue);
+    position: fixed;
+    clip-path: circle();
+}
+
+.ball.top {
+    width: 63.3rem;
+    height: 63.3rem;
+    top: -41rem;
+    right: -41rem;
+}
+
+.ball.bottom {
+    width: 21.2rem;
+    height: 21.2rem;
+    bottom: -16rem;
+    right: 5.33rem;
 }
