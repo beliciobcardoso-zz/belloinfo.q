@@ -10,6 +10,7 @@
     --grey-dark: #4D5E77;
     --grey-blue: #A1B2CD;
     --grey-light: #E5EAF1;
+    --grey-medium: #EAECF2;
 
     font-size: 62.5%;
     /*font-family: 'Poppins', sans-serif, 'Open Sans';*/
@@ -101,4 +102,17 @@ button.outlined,
     background: var(--white);
     color: var(--blue);
     border: .2rem solid var(--blue);
+}
+
+button.red,
+.button.red {
+    color: var(--white);
+    background-color: var(--red);
+}
+
+
+button.grey,
+.button.grey {
+    background: var(--grey-light);
+    color: var(--grey-dark);
 }
