@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/room.css">
+        <link rel="stylesheet" href="./css/modal.css">
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+        <title>BelloInfo.Q - Perguntas e respostas</title>
+    </head>
+
+    <body>
+        <div class="content" id="room">
+            <header>
+                <a href="/">
+                    <img src="./images/Logo.svg" alt="logo belloinfo.q">
+                </a>
+
+                <div class="buttons">
+                    <div href="#" class="button outlined" id="room-id" data-id="323243">
+                        #323243
+                        <img src="./images/copy.svg" alt="Copiar numero da sala">
+                    </div>
+
+                    <a href="#" class="button">
+                        <img src="./images/users-white.svg" alt="criar uma sala">
+                        Criar sala
+                    </a>
+                </div>
+            </header>
+            <main>
+                <section id="question-form">
+                    <h2>Faça sua pergunta</h2>
+                    <form action="">
+                        <label class="sr-only" for-id="question">O que você quer perguntar?</label>
+                        <textarea name="question" id="question" placeholder="O que você quer perguntar?"></textarea>
+                        <footer>
+                            <div>
+                                <img src="./images/lock.svg" alt="Esta pergunta é anónima">
+                                Esta pergunta é anónima
+                            </div>
+                            <button>Enviar</button>
+                        </footer>
+                    </form>
+                </section>
+
+                <section id="questions">
+                    <h2 class="sr-only">Pergutas da Comunidade</h2>
+
+                    <div class="questions">
+                        <div class="question-wrapper">
+
+                            <div class="question-content">
+                                <div class="user">
+                                    <img src="./images/user.svg" alt="usuario">
+                                </div>
+                                <div class="question">
+                                    <p>Qual a diferencia?</p>
+                                </div>
+                            </div>
+
+                            <div class="actions">
+                                <a href="#" id="check" data-id="2">
+                                    <img src="./images/check.svg" alt="Marcar como lida">
+                                    Marcar como lida
+                                </a>
+                                <a href="#" id="delete" data-id="2">
+                                    <img src="./images/trash.svg" alt="excluir mensagem">
+                                    Excluir
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="question-wrapper">
+
+                            <div class="question-content">
+                                <div class="user">
+                                    <img src="./images/user.svg" alt="usuario">
+                                </div>
+                                <div class="question">
+                                    <p>Qual a diferencia?Qual a diferencia?Qual a diferencia?Qual a diferencia?Qual a
+                                        diferencia?Qual a diferencia?Qual a diferencia?Qual a diferencia?Qual a
+                                        diferencia?Qual a diferencia?Qual a diferencia?Qual a diferencia?Qual a
+                                        diferencia?Qual a diferencia?Qual a diferencia?Qual a diferencia?Qual a
+                                        diferencia?Qual a diferencia?Qual a diferencia?Qual a diferencia?Qual a
+                                        diferencia?Qual a diferencia?Qual a diferencia?</p>
+                                </div>
+                            </div>
+
+                            <div class="actions">
+                                <a href="#" id="check" data-id="3">
+                                    <img src="./images/check.svg" alt="Marcar como lida">
+                                    Marcar como lida
+                                </a>
+                                <a href="#" id="delete" data-id="3">
+                                    <img src="./images/trash.svg" alt="excluir mensagem">
+                                    Excluir
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="question-wrapper read">
+
+                            <div class="question-content">
+                                <div class="user ">
+                                    <img src="./images/user.svg" alt="usuario">
+                                </div>
+                                <div class="question">
+                                    <p>O que é JavaScript?</p>
+                                </div>
+                            </div>
+
+                            <div class="actions">
+                                <a href="#" id="delete" data-id="1">
+                                    <img src="./images/trash.svg" alt="excluir mensagem">
+                                    Excluir
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </main>
+        </div>
+
+        <div class="modal-wrapper">
+            <div class="modal">
+                <h2></h2>
+                <p></p>
+                <form action="#" method="POST">
+                    <label for-id="password" class="sr-only">Digite sua senha admin</label>
+                    <input id="password" type="password" name="password" placeholder="Digite sua senha">
+                    <div class="buttons">
+                        <div id="cancelar" class="button grey">
+                            Cancelar
+                        </div>
+                        <button class=""></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="scripts/main.js" defer type="module"></script>
+    </body>
+    </div>
+
+
+</html>
