@@ -31,7 +31,7 @@ function handleClick(event, check = true) {
     const roomId = variaveisDOM.roomId.dataset.id;
     const questionId = event.target.dataset.id;
 
-    variaveisDOM.form.setAttribute('action', `/room/${roomId}/${questionId}/${slug}`);
+    variaveisDOM.form.setAttribute('action', `/question/${roomId}/${questionId}/${slug}`);
 
     variaveisDOM.modalTitle.textContent = `${text} esta pergunta?`;
     variaveisDOM.modalDescription.textContent = `Tem certeza que deseja ${text.toLocaleLowerCase()} esta pergunta?`;
