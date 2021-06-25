@@ -1,3 +1,4 @@
+'use strict'
 import Modal from './modal.js';
 
 const variaveisDOM = {
@@ -39,5 +40,3 @@ function handleClick(event, check = true) {
 
     Modal();
 }
-
-
