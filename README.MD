@@ -26,14 +26,11 @@ O Belloinfo.Q é uma aplicação de interação através de perguntas, sendo pos
 
 <br>
 <img src="./.readme/img/home.png" >
-<br>
 <p>Pagina Principal</p>
 <br>
 <img src="./.readme/img/createpass.png" >
-<br>
 <p>Pagina criar sala</p>
 <br>
 <img src="./.readme/img/room.png" >
-<br>
 <p>Pagina Sala das perguntas</p>
 <br>
