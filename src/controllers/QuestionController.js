@@ -2,7 +2,7 @@
 const dataBase = require('../db/config');
 
 module.exports = {
-    async index(request, respond) {
+    async index(request, response) {
         const db = await dataBase();
 
         const roomId = request.params.room;
@@ -21,14 +21,14 @@ module.exports = {
 
                 await db.run(`UPDATE questions SET status = 1 WHERE id = ${questionId}`);
             }
-            respond.redirect(`/room/${roomId}`);
+            response.redirect(`/room/${roomId}`);
         } else {
-            respond.render(`passincorrect`, { roomId: roomId });
+            response.render(`passincorrect`, { roomId: roomId });
 
         }
 
     },
-    async create(request, respond) {
+    async create(request, response) {
         const db = await dataBase();
         const question = request.body.question;
         const status = 0;
@@ -36,7 +36,7 @@ module.exports = {
 
         await db.run(`INSERT INTO questions (title, status, room) VALUES ("${question}",${status}, ${roomId}) `);
 
-        respond.redirect(`/room/${roomId}`);
+        response.redirect(`/room/${roomId}`);
 
         await db.close();
     }

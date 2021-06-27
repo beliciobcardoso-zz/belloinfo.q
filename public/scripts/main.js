@@ -1,5 +1,7 @@
 'use strict'
-import Modal from './modal.js';
+export default function Modal() {    
+    return document.querySelector(".modal-wrapper").classList.toggle("active");
+}
 
 const variaveisDOM = {
     checkButtons: document.querySelectorAll('.actions a#check'),
